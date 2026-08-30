@@ -36,7 +36,7 @@ export default function NewTrainingPage() {
                     trainingName,
                     exercises
                 }
-                setTrainings([newTraining])
+                setTrainings(prev => [...prev, newTraining])
                 navigate('/')
             }}>Criar Treino</button>
         </div>

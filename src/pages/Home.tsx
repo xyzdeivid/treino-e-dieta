@@ -8,10 +8,12 @@ export default function Home() {
 
     const { trainings } = useContext(TrainingsContext)
 
+    const lastIndex = trainings.length - 1
+
     return (
         <div>
             {
-                trainings.length > 0 && trainings[0].trainingName ?
+                trainings[lastIndex].trainingName ?
                     <TrainingsCards />
                     : <NoContentWarning />
             }
