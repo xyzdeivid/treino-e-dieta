@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Header from './components/common/Header'
 import Home from './pages/Home'
 import NewTrainingPage from './pages/NewTrainingPage'
+import './App.css'
 
 import TrainingsProvider from './TrainingsProvider'
 
@@ -11,7 +11,6 @@ function App() {
   return (
     <>
       <TrainingsProvider>
-        <Header />
         <Router>
           <Routes>
             <Route path='/' element={<Home />} />

@@ -20,6 +20,6 @@ export interface TrainingsContextType {
 }
 
 export const TrainingsContext = createContext<TrainingsContextType>({
-    trainings: DEFAULT,
+    trainings: [],
     setTrainings: () => { }
 })
