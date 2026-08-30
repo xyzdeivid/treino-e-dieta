@@ -25,7 +25,7 @@ export default function TrainingsCards() {
                                             })
                                         }
                                     </ul>
-                                    <button>Iniciar Treino</button>
+                                    <button onClick={() => navigate(`/training-page/${training.id}`)}>Iniciar Treino</button>
                                 </div> : null
                         )
 

@@ -7,6 +7,7 @@ export interface Exercise {
 export type Exercises = Exercise[]
 
 export type Training = {
+    id: string
     trainingName: string
     exercises: Exercises
 }

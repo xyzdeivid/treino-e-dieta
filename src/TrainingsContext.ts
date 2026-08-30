@@ -3,6 +3,7 @@ import type { Training } from './types'
 
 export const DEFAULT: Training[] = [
     {
+        id: '',
         trainingName: '',
         exercises: [
             {

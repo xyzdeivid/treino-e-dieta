@@ -1,4 +1,4 @@
-import { useState, useContext } from "react"
+import { useState, useContext, useId } from "react"
 import { useNavigate } from "react-router-dom"
 import ExerciseInput from "../components/newTrainingPage/ExerciseInput"
 
@@ -8,6 +8,7 @@ import { TrainingsContext } from '../TrainingsContext'
 
 export default function NewTrainingPage() {
 
+    const id = useId()
     const [trainingName, setTrainingName] = useState('')
     const [exercises, setExercises] = useState<Exercises>([])
     const navigate = useNavigate()
@@ -33,6 +34,7 @@ export default function NewTrainingPage() {
             <hr style={{ margin: '20px auto', width: '80%' }} />
             <button onClick={() => {
                 const newTraining: Training = {
+                    id,
                     trainingName,
                     exercises
                 }
